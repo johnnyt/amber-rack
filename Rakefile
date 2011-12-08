@@ -3,6 +3,9 @@
 bundler_installed = !!(%x[gem list] =~ /bundler/)
 
 if bundler_installed
+  require 'bundler'
+  Bundler::GemHelper.install_tasks
+
   task :default => :server
 
   desc "Start the Rack server"

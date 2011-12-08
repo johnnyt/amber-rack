@@ -16,6 +16,7 @@
 db/*.sqlite3
 /log/*
 tmp/*
+pkg
 
 # various artifacts
 /couchdb.std*
